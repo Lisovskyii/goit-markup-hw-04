@@ -95,6 +95,16 @@ color: #4D5AE5;
    display: flex;
    align-items: center;
 }
+/* ============topline portfolio======= */
+.top-line {
+
+
+   background: #FFFFFF;
+   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+
+}
+
 
 /* MENU */
 .menu-item:not(:last-child){
@@ -141,18 +151,19 @@ color: #4D5AE5;
 
 /* ==================HERO =============*/
 .hero{
-   background-color: var(--bgc-main);
+   /* background-color:#E7E9FC */
    max-width: 1440px;
       height: 600px;
       margin-left: auto;
       margin-right: auto;
-      background-image: linear-gradient( to right,
-      rgba(0,0,0,0.7),
-      rgba(0,0,0,0.7) ),
-      url(../images/people-office.jpg);
-background-repeat: no-repeat;
+      background-repeat: no-repeat;
 background-position:center;
 background-size:cover;
+      background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+         rgba(46, 47, 66, 0.7)),
+      url(../images/people-office.jpg);
+      background-color: #434455;
 }
 
 .main-title{
@@ -198,32 +209,31 @@ background-size:cover;
 .discr:not(:last-child){
    margin-right: 24px;
 }
-.discr::before{
+.about-us-container{
    box-sizing: border-box;
    display: block;
    content:'' ;
    height: 112px;
    width: 264px;
-   background-repeat: no-repeat;
+   /* background-repeat: no-repeat;
    background-size:contain;
-   background-position: center;
+   background-position: center; */
    background-color:#F4F4FD;
+   margin-bottom: 8px;
+}
+
+.about-us-link{
+   display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 24px;
+      padding-bottom: 24px;
 }
 
 
-.icon-antena::before {
-   background-image: url('../images/group.svg');
-}
-.icon-clock::before{
-   background-image: url('../images/clock.svg');
 
-}
-.icon-computer::before{
-   background-image: url('../images/diagram.svg');
-}
-.icon-spaceman::before{
-   background-image: url('../images/astronaut.svg');
-}
 /* ==============What we are doing ================*/
 
 .work-list{
@@ -286,6 +296,10 @@ display: flex;
    justify-content: center;
    gap: 24px;
 }
+.social-list-link:hover,
+.social-list-link:focus{
+   background-color:#404BBF;
+}
    .social-list-icon{
       fill: #FFFFFF;
    }
@@ -313,6 +327,23 @@ display: flex;
    display: flex;
    justify-content: center;
    align-items: center;
+}
+.customer-list-link:hover .customer-list-icon,
+.customer-list-link:focus .customer-list-icon{
+   fill: #4D5AE5;
+}
+.customer-list-icon{
+   border: 1px solid #8E8F99;
+      border-radius: 4px;
+      width: 168px;
+         height: 88px;
+         padding: 16px, 32px;
+         fill: #8E8F99;
+}
+.customer-list-link
+.customer-list-icon:hover,
+.customer-list-iconfocus{
+   border: 1px solid #4D5AE5;
 }
 
 /* ===============PORTFOLIO============= */
@@ -382,6 +413,7 @@ margin-bottom: 48px;
    background-color: var(--bgc-main);
    padding-top: 100px;
    padding-bottom: 188px;
+
 }
 .footer-text{
       font-size: 16px;
@@ -392,6 +424,8 @@ margin-bottom: 48px;
       margin-top: 16px;
       width: 264px;
          height: 72px;
+         margin-right: 120px;
+         
 }
 .logo-fone-dark{
    color: #F4F4FD;
@@ -407,13 +441,15 @@ margin-bottom: 48px;
       justify-content: center;
          text-align: center;
          margin-bottom: 16px;
-    
-}
+      }
+      
 .footer-list{
-   display: flex;
-   justify-content: center;
+   display:flex;
+   justify-content:center;
    gap: 16px;
+   
 }
+
 .footer-list-link {
    display: flex;
    justify-content: center;
@@ -422,7 +458,27 @@ margin-bottom: 48px;
    height: 40px;
    border-radius: 50%;
    background-color:#434455;
+   
 }
+.footer-list-link:hover,
+.footer-list-link:focus{
+   background-color:#31D0AA;
+}
+
+
 .footer-list-icon{
    fill: #F4F4FD;
+   
+}
+.social-media{
+   position: absolute;
+      width: 208px;
+      left: 528px;
+      top: 3103px;
+}
+.footer-media{
+   position: absolute;
+      width: 208px;
+      left: 528px;
+      top: 1912px;
 }

@@ -413,6 +413,7 @@ margin-bottom: 48px;
    background-color: var(--bgc-main);
    padding-top: 100px;
    padding-bottom: 188px;
+   display: flex;
 
 }
 .footer-text{
@@ -424,8 +425,7 @@ margin-bottom: 48px;
       margin-top: 16px;
       width: 264px;
          height: 72px;
-         margin-right: 120px;
-         
+
 }
 .logo-fone-dark{
    color: #F4F4FD;
@@ -470,15 +470,18 @@ margin-bottom: 48px;
    fill: #F4F4FD;
    
 }
-.social-media{
-   position: absolute;
-      width: 208px;
-      left: 528px;
-      top: 3103px;
+/* ===== footer position====== */
+
+.footer-container {
+   display: flex;
+
 }
-.footer-media{
-   position: absolute;
-      width: 208px;
-      left: 528px;
-      top: 1912px;
+
+
+.social-media{
+   margin-right: 80px;
+
+}
+.logo-text {
+   margin-right: 120px;
 }
